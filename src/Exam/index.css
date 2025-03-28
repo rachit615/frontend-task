@@ -1,0 +1,26 @@
+.examTabsContainer {
+  background: linear-gradient(to right, #008000, #800080);
+  border-radius: 10px;
+}
+
+.examDetailsContainer {
+  background: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.universityExamDetails {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.universityExamDetails > div:first-child {
+  width: 60%;
+}
+
+.universityExamDetails > div:last-child {
+  width: 40%;
+}

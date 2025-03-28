@@ -1,0 +1,32 @@
+.signature-sheet-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.signature-sheet-container > * {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 1400px) {
+  .signature-sheet-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1100px) {
+  .signature-sheet-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .signature-sheet-container {
+    grid-template-columns: 1fr;
+  }
+}

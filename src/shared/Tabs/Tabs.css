@@ -1,0 +1,82 @@
+.navigation-tabs-container-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #06062c;
+  position: relative;
+  border-radius: 10px;
+}
+
+.navigation-tabs-container {
+  flex-grow: 1;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 2px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.navigation-tabs-container::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+.navigation-tabs {
+  display: flex;
+  gap: 15px;
+  width: fit-content;
+}
+
+.navigation-arrow {
+  background-color: white;
+  color: #06062c;
+  border: none;
+  border-radius: 10px;
+  height: 100%;
+  padding: 9px 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.left-arrow {
+  margin-right: 10px;
+}
+
+.right-arrow {
+  margin-left: 10px;
+}
+
+.navigation-tab {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-tab:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navigation-tab.active {
+  background-color: #ffffff;
+  color: white;
+}
+
+.tab-icon {
+  margin-right: 5px;
+}
+
+.tab-label {
+  font-size: 12px;
+  color: white;
+}
+
+.tab-label.active {
+  color: black;
+}
